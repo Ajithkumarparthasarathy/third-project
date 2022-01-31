@@ -1,5 +1,6 @@
 class TablesController < ApplicationController
   before_action :set_table, only: %i[ show edit update destroy ]
+  before_action :authenticate_log!, except: [:index, :show]
 
   # GET /tables or /tables.json
   def index
@@ -59,12 +60,12 @@ class TablesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_table
-      @table = Table.find(params[:id])
-    end
+  def set_table
+    @table = Table.find(params[:id])
+  end
 
     # Only allow a list of trusted parameters through.
-    def table_params
-      params.require(:table).permit(:name, :address, :phone, :price)
-    end
+  def table_params
+    params.require(:table).permit(:name, :address, :phone, :price, :author_id)
+  end
 end

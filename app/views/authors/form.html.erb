@@ -2,8 +2,8 @@
 
 <%= form_for :author, url: "/save", method: "post" do |f| %>
     <div>
-      <%= f.label :name, style: "display: block" %>
-      <%= f.text_field :Name %>
+      <%= f.label :specify, style: "display: block" %>
+      <%= f.text_field :name %>
     </div>
     <div>
       <%= f.submit "Save", class: "btn btn-primary" %>
