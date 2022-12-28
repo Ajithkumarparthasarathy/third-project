@@ -9,8 +9,6 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Ajith step
-       run: echo "GITHUB_TOKEN"
       - uses: Ajithkumarparthasarathy/automate-release-action@master
         with:
           bump_version_scheme: minor
