@@ -14,5 +14,5 @@ jobs:
           bump_version_scheme: minor
       - name: Show default environment variables
         run: |
-          echo "The job_id is"   # reference the default environment variables
+          echo "GITHUB_TOKEN: $secrets.GITHUB_TOKEN"   # reference the default environment variables
         
