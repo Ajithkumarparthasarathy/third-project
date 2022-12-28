@@ -8,9 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    run: |
+      echo "Ajith"
     steps:
       - uses: Ajithkumarparthasarathy/automate-release-action@master
         with:
           bump_version_scheme: minor
-        run: |
-          echo "Ajith"
+        
