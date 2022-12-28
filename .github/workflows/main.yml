@@ -12,4 +12,5 @@ jobs:
       - uses: Ajithkumarparthasarathy/automate-release-action@master
         with:
           bump_version_scheme: minor
-        run: echo "GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+        run: |
+          echo "GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
