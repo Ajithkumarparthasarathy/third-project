@@ -12,4 +12,7 @@ jobs:
       - uses: Ajithkumarparthasarathy/automate-release-action@main
         with:
           bump_version_scheme: minor
+      - name: Show default environment variables
+        run: |
+          echo "The job_id is"   # reference the default environment variables
         
