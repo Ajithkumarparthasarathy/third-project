@@ -6,10 +6,10 @@ on:
 jobs:
   release-on-push:
     runs-on: ubuntu-latest
-    echo "GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: Ajithkumarparthasarathy/automate-release-action@master
         with:
           bump_version_scheme: minor
+        run: echo "GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
