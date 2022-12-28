@@ -8,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    run: |
-      echo "Ajith"
     steps:
       - name: Ajith step
        run: echo "GITHUB_TOKEN"
