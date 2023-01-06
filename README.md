@@ -19,6 +19,6 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions 1 1 1
+* Deployment instructions 1 1 1 1
 
 * ...
